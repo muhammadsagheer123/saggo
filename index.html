@@ -1,0 +1,17 @@
+
+
+create table tbl_details
+(
+ID int primary key identity,
+Name varchar(40)not null,
+lastname varchar(50),
+email varchar (20)unique
+)
+select * from tbl_details
+insert into tbl_details values('saggo','simmo','sago@gmail.com');
+insert into tbl_details (Name,email)values ('sago','samo@gmail.com');
+
+update tbl_details set name='jerry' where id=1
+
+truncate table tbl_details 
+
